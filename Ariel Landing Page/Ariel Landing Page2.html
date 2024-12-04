@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #007942;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/Ariel_background3.jpg) no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .product-card {
+            text-align: center;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 200px;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card p {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #007942;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            color: white;
+            background-color: #0a911a;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 250px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: white;
+            background-color: #07880e;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #056a0b;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/Ariel_Logo.png" alt="Ariel Logo">
+            <span>Ariel</span>
+        </div>
+        <div>
+            <a href="#products">Shop Products</a>
+            <a href="#innovation">Innovation</a>
+            <a href="#how-to-wash">How to Wash Clothes</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <h1>BRILLIANT STAIN REMOVAL IN 1 WASH</h1>
+        <p>LONG-LASTING BANGO FROM SAMPAY TO SUOT</p>
+    </div>
+
+    <div class="products" id="products">
+        <div class="product-card">
+            <img src="images/Ariel_pods.jpg" alt="Product 1">
+            <p>Ariel ALL in 1 Pods</p>
+        </div>
+        <div class="product-card">
+            <img src="images/Washing_detergent.png" alt="Product 2">
+            <p>Ariel Liquid Detergent</p>
+        </div>
+        <div class="product-card">
+            <img src="images/Ariel_washing_powder.jpg" alt="Product 3">
+            <p>Ariel Washing Powder</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h1>FIND THE RIGHT ARIEL PRODUCT FOR YOU</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="images/Stained_shirt.png" alt="Stain Removal">
+                <h2>Browse by Need</h2>
+                <p>Stain removal, Freshness, Whiteness, Bright Colours, and more</p>
+                <a href="#need" class="button">Explore</a>
+            </div>
+            <div class="card">
+                <img src="images/Ariel_products.webp" alt="Ariel Products">
+                <h2>Browse by Type</h2>
+                <p>PODS, Liquid, or Powder</p>
+                <a href="#type" class="button">Explore</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
